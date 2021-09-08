@@ -52,7 +52,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/itemRow"
-            android:layout_marginTop="-2dp"
+            android:layout_marginTop="0dp"
             android:isScrollContainer="false"
             android:nestedScrollingEnabled="false"
             android:padding="10dp" />
