@@ -1,0 +1,10 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.FetchRewardsTest" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">#F49616</item>
+        <item name="colorPrimaryDark">#ECA340</item>
+        <item name="colorAccent">#433E36</item>
+        <!-- Customize your theme here. -->
+    </style>
+</resources>

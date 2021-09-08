@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="8dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:isScrollContainer="true"
+        android:nestedScrollingEnabled="true">
+
+        <RelativeLayout
+            android:id="@+id/itemRow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/tvItemListId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:clickable="true"
+                android:text="000" />
+
+            <!--            <TextView-->
+            <!--                android:id="@+id/tvItemName"-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_marginStart="50dp"-->
+            <!--                android:layout_toEndOf="@+id/tvItemListId"-->
+            <!--                android:text="Matthew" />-->
+
+            <!--            <TextView-->
+            <!--                android:id="@+id/tvId"-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_marginStart="50dp"-->
+            <!--                android:layout_toEndOf="@+id/tvItemName"-->
+            <!--                android:text="123" />-->
+
+        </RelativeLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvNested"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/itemRow"
+            android:layout_marginTop="-2dp"
+            android:isScrollContainer="false"
+            android:nestedScrollingEnabled="false"
+            android:padding="10dp" />
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
